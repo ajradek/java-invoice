@@ -19,21 +19,14 @@ public class Invoice {
     }
 
     public BigDecimal getSubtotal() {
-        BigDecimal subtotal = BigDecimal.ZERO;
-        if (!products.isEmpty()) {
-            for (Product product : products) {
-                subtotal = subtotal.add(BigDecimal.ONE);
-            }
-        }
-
-        return subtotal;
+        return BigDecimal.ZERO;
     }
 
     public BigDecimal getTax() {
-        return null;
+        return BigDecimal.ZERO;
     }
 
     public BigDecimal getTotal() {
-        return null;
+        return BigDecimal.ZERO;
     }
 }
