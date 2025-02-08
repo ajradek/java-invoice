@@ -8,5 +8,5 @@ public class DairyProduct extends Product {
         if(price == null) {
             throw new IllegalArgumentException("Price cannot be null");
         }
-    }
+     }
 }
