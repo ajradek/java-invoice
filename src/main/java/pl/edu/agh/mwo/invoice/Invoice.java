@@ -9,15 +9,24 @@ public class Invoice {
     private Collection<Product> products;
 
     public void addProduct(Product product) {
-        // TODO: implement
+        products.add(product);
     }
 
     public void addProduct(Product product, Integer quantity) {
-        // TODO: implement
+        for (int i = 0; i < quantity; i++) {
+            products.add(product);
+        }
     }
 
     public BigDecimal getSubtotal() {
-        return null;
+        BigDecimal subtotal = BigDecimal.ZERO;
+        if (!products.isEmpty()) {
+            for (Product product : products) {
+                subtotal = subtotal.add(BigDecimal.ONE);
+            }
+        }
+
+        return subtotal;
     }
 
     public BigDecimal getTax() {
