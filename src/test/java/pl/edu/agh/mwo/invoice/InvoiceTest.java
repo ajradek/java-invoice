@@ -13,7 +13,7 @@ import pl.edu.agh.mwo.invoice.product.Product;
 import pl.edu.agh.mwo.invoice.product.TaxFreeProduct;
 
 public class InvoiceTest {
-    private Invoice invoice;
+    private Invoice invoice ;
 
     @Before
     public void createEmptyInvoiceForTheTest() {

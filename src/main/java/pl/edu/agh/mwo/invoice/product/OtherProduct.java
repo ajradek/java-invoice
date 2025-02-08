@@ -1,6 +1,6 @@
 package pl.edu.agh.mwo.invoice.product;
 
-import java.math.BigDecimal;
+import java.math.BigDecimal ;
 
 public class OtherProduct extends Product{
 

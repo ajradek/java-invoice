@@ -25,7 +25,7 @@ public class Invoice {
             Integer quantity = products.get(product);
             subtotal = subtotal.add(product.getPrice().multiply(new BigDecimal(quantity)));
         }
-        return subtotal;
+        return subtotal ;
     }
 
     public BigDecimal getTax() {
